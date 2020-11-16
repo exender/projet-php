@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello OffreController!{% endblock %}
+{% block title %}Hello OffresController!{% endblock %}
 
 {% block body %}
 <style>
@@ -9,12 +9,8 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/php/indeed_ynov_2021/src/Controller/OffreController.php'|file_link(0) }}">src/Controller/OffreController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/php/indeed_ynov_2021/templates/offre/index.html.twig'|file_link(0) }}">templates/offre/index.html.twig</a></code></li>
-    </ul>
+    <h1>indeed</h1>
+        {{ dump(offre) }}
+  
 </div>
 {% endblock %}
