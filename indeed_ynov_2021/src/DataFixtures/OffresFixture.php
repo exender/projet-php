@@ -63,3 +63,4 @@ class OffresFixture extends Fixture
         $manager->flush();
     }
 }
+/////////fafefazef
