@@ -1,16 +1,47 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello OffresController!{% endblock %}
+{% block title %}Indeed{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<h2>Craoutch Gang Ind.</h2>
+<div id="cards" class="container-fluid">
+    <div id="card" class="card col m-1">
+        <p class="card-body" href="{{offre.id}}">
+           
+            <h3 id="title" class="card-title">
+                {{offre.titre}}</h3>
 
-<div class="example-wrapper">
-    <h1>indeed</h1>
-        {{ dump(offre) }}
-  
-</div>
+            <p id="description" class="card-text">
+                <span>Description : </span>
+                {{offre.Description}}</p>
+                
+            <p id="ville" class="card-text">
+                <span>Ville : </span>
+                {{offre.ville}}</p>
+            
+            <p id="adresse" class="card-text">    
+                <span>Adresse : </span>
+                {{offre.adresse}}</p>
+
+            <p id="code_postal" class="card-text">    
+                <span>Code postal : </span>
+                {{offre.codepostal}}</p>
+
+            <p id="type" class="card-text">
+                <span>Type : </span>
+                {{offre.contrat.name}}</p>
+
+            <p id="temps" class="card-text">
+                <span>Durée : </span>
+                {{offre.typecontrat.type}}</p>
+            
+            </p>
+    </div>
+    </div>
+    <div class="contact">
+        <p> Vous trouverez si join le contact du site </p>
+            <h3> A propos </h3>
+            <li>craoutchgang@gmail.com </li>
+            <li>080000000000000000000</li>
+    </div>
 {% endblock %}

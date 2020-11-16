@@ -4,8 +4,9 @@
 {% endblock %}
 
 {% block body %}
+<h2>Craoutch Gang Ind.</h2>
     <div id="cards" class="container-fluid">
-        <div class="row row-cols-4 justify-content-center">
+        <div class="row row-cols-1 justify-content-center">
             {% for offre in offres %}
                 <div id="card" class="card col m-1">
                     <a class="card-body" href="{{offre.id}}">
@@ -24,5 +25,11 @@
                 </div>
             {% endfor %}
         </div>
+    </div>
+    <div class="contact">
+        <p> Vous trouverez si join le contact du site </p>
+            <h3> A propos </h3>
+            <li>craoutchgang@gmail.com </li>
+            <li>080000000000000000000</li>
     </div>
 {% endblock %}
