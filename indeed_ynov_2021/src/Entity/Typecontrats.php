@@ -32,6 +32,11 @@ class Typecontrats
         return $this->type;
     }
 
+    public function __toString(): string
+    {
+        return $this->getType();
+    }
+
     public function setType(string $type): self
     {
         $this->type = $type;

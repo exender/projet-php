@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AddNewOffresController extends AbstractController
 {
     /**
-     * @Route("/new", name="new_offres")
+     * @Route("/new", name="add_new_offres")
      */
     public function index(Request $request): Response
     {
@@ -33,7 +33,7 @@ class AddNewOffresController extends AbstractController
             return $this->redirectToRoute('offres');
         }
 
-        return $this->render('new_offres/index.html.twig', [
+        return $this->render('add_new_offres/index.html.twig', [
             'form' => $form->createView(),
         ]);
     }
