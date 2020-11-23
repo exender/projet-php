@@ -1,35 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Indeed
-{% endblock %}
-
 {% block body %}
-<h2>Craoutch Gang Ind.</h2>
-    <div id="cards" class="container-fluid">
-        <div class="row row-cols-1 justify-content-center">
-            {% for offre in offres %}
-                <div id="card" class="card col m-1">
-                    <a class="card-body" href="{{offre.id}}">
-                        <h5 id="title" class="card-title">
-                            {{offre.titre}}</h5>
-                        <p id="ville" class="card-text">
-                            <span>Ville:</span>
-                            {{offre.ville}}</p>
-                        <p id="type" class="card-text">
-                            <span>Type:</span>
-                            {{offre.contrat.name}}</p>
-                        <p id="temps" class="card-text">
-                            <span>Durée:</span>
-                            {{offre.typecontrat.type}}</p>
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-    <div class="contact">
-        <p> Vous trouverez si join le contact du site </p>
-            <h3> A propos </h3>
-            <li>craoutchgang@gmail.com </li>
-            <li>080000000000000000000</li>
-    </div>
+	<h2>Craoutch Gang Ind.</h2>
+
+	<div id="cards" class="container-fluid">
+		<div class="row row-cols-1 justify-content-center">
+			{% for offre in offres %}
+				<div id="card" class="card col m-1">
+					<a class="card-body" href="{{offre.id}}">
+						<h5 id="title" class="card-title">
+							{{offre.titre}}</h5>
+						<p id="ville" class="card-text">
+							<span>Ville:</span>
+							{{offre.ville}}</p>
+						<p id="type" class="card-text">
+							<span>Type:</span>
+							{{offre.contrat.name}}</p>
+						<p id="temps" class="card-text">
+							<span>Durée:</span>
+							{{offre.typecontrat.type}}</p>
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="contact">
+		<p>
+			Vous trouverez si join le contact du site
+		</p>
+		<h3>
+			A propos
+		</h3>
+		<li>craoutchgang@gmail.com
+		</li>
+		<li>080000000000000000000</li>
+	</div>
 {% endblock %}
