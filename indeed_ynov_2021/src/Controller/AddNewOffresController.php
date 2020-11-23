@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class NewOffresController extends AbstractController
+class AddNewOffresController extends AbstractController
 {
     /**
      * @Route("/new", name="new_offres")
