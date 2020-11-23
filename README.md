@@ -15,8 +15,8 @@ composer require fzaninotto/faker
 ```bash
 composer require symfony/webpack-encore-bundle
 npm install
-npm uninstall sass-loader
 npm install node-sass@4.14.1
+npm run watch
 ```
 
 ```bash
