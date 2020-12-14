@@ -28,3 +28,8 @@ symfony console doctrine:fixtures:load
 ```bash
 symfony server:start
 ```
+## Partit 2 
+
+Dans la partit 2 nous avons laisser le code mais nous avons une erreur que nous ne comprenons pas donc nous ne pourvons pas voir ce que cela donne.
+Dans le code nous avons la partit register et login. 
+ 
